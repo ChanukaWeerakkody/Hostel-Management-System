@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="586.0" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hostel.controller.SplashScreenController">
+   <children>
+      <ImageView fitHeight="396.0" fitWidth="661.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/splash3.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rctContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="8.0" layoutX="14.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #F0E68C;" width="572.0" />
+      <Rectangle fx:id="rctLoading" arcHeight="5.0" arcWidth="5.0" fill="#1ffff9" height="8.0" layoutX="14.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #FD562A;" width="26.0" />
+      <Label fx:id="lblLoading" layoutX="18.0" layoutY="306.0" style="-fx-text-fill: #FD562A;" text="Loading...." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="213.0" text="Hi" />
+      <ImageView fitHeight="131.0" fitWidth="138.0" layoutX="204.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/MyLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

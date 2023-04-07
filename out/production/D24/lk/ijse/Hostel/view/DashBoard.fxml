@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="1003.0" prefWidth="1935.0" styleClass="right-pane" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hostel.controller.DashBoardController">
+   <children>
+      <AnchorPane fx:id="subPane" layoutX="249.0" prefHeight="1005.0" prefWidth="1685.0">
+         <children>
+            <JFXButton layoutX="60.0" layoutY="72.0" onAction="#btnAboutUsOnAction" style="-fx-background-radius: 20;" styleClass="center-pane" text="About Us">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="227.0" layoutY="71.0" onAction="#btnContactOnAction" prefHeight="54.0" prefWidth="138.0" style="-fx-background-radius: 20;" styleClass="center-pane" text="Contact">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane id="middlePane" layoutX="1367.0" layoutY="18.0" prefHeight="131.0" prefWidth="285.0" style="-fx-background-radius: 40;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="barPane" layoutY="-1.0" prefHeight="1004.0" prefWidth="250.0">
+         <children>
+            <Pane layoutY="52.0" prefHeight="925.0" prefWidth="185.0" styleClass="left-pane-radius">
+               <children>
+                  <ImageView id="imgHome" accessibleRole="BUTTON" fitHeight="65.0" fitWidth="81.0" layoutX="54.0" layoutY="804.0" onMouseClicked="#logOutOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-logout-rounded-left-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane layoutX="21.0" layoutY="90.0" prefHeight="688.0" prefWidth="143.0" style="-fx-background-radius: 40;" styleClass="center-pane" stylesheets="@../style/Style.css">
+                     <children>
+                        <VBox layoutX="29.0" layoutY="74.0" prefHeight="568.0" prefWidth="92.0">
+                           <children>
+                              <ImageView id="imgHome" accessibleRole="BUTTON" fitHeight="89.0" fitWidth="68.0" onMouseClicked="#dashBoardOnAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/icons8-home-100.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="70.0" text="Home" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView id="imgHome" fitHeight="86.0" fitWidth="65.0" onMouseClicked="#studentOnAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/icons8-collaborator-male-100.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="99.0" text="Student" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label />
+                              <ImageView id="imgHome" fitHeight="86.0" fitWidth="65.0" onMouseClicked="#roomsOnAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/icons8-bed-64.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="57.0" prefWidth="70.0" text="Rooms" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView id="imgHome" fitHeight="86.0" fitWidth="65.0" onMouseClicked="#reservationOnAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/icons8-thinking-male-64.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="56.0" prefWidth="70.0" text="Register" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView id="imgHome" fitHeight="86.0" fitWidth="65.0" onMouseClicked="#detailsOnAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/icons8-pay-90.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="99.0" text="Reservation" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

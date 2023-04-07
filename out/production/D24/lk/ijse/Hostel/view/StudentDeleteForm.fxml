@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1005.0" prefWidth="1685.0" styleClass="right-pane" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hostel.controller.StudentDeleteFormController">
+   <children>
+      <Label layoutX="45.0" layoutY="23.0" style="-fx-text-fill: #996515;" text="Student">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Pane id="middlePane" layoutX="27.0" layoutY="170.0" opacity="0.63" prefHeight="809.0" prefWidth="1625.0" style="-fx-background-radius: 40;" styleClass="pane-transparent" />
+      <Label layoutX="115.0" layoutY="330.0" style="-fx-text-fill: #996515;" text="Student Id          :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="528.0" style="-fx-text-fill: #996515;" text="Contact No         :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="855.0" layoutY="330.0" style="-fx-text-fill: #996515;" text="Student name    :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="381.0" layoutY="530.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="380.0" layoutY="420.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="1120.0" layoutY="334.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="111.0" layoutY="424.0" style="-fx-text-fill: #996515;" text="Address               :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="663.0" layoutY="732.0" onAction="#clearOnAction" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane id="middlePane" layoutX="1509.0" layoutY="58.0" opacity="0.63" prefHeight="92.0" prefWidth="142.0" style="-fx-background-radius: 40;" styleClass="pane-transparent">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="78.0" layoutX="32.0" layoutY="10.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-logout-rounded-left-100.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="856.0" layoutY="421.0" style="-fx-text-fill: #996515;" text="Gender                :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="856.0" layoutY="531.0" style="-fx-text-fill: #996515;" text="Date                     :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDate" layoutX="1120.0" layoutY="536.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtGender" layoutX="1120.0" layoutY="424.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtId" layoutX="380.0" layoutY="330.0" onAction="#txtIdOnAction" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="832.0" layoutY="733.0" onAction="#deleteOnAction" prefHeight="74.0" prefWidth="189.0" styleClass="delete-btn" stylesheets="@../style/Style.css" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

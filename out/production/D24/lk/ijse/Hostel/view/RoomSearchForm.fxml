@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1005.0" prefWidth="1685.0" styleClass="right-pane" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hostel.controller.RoomSearchFormController">
+   <children>
+      <Label layoutX="45.0" layoutY="23.0" style="-fx-text-fill: #996515;" text="Rooms">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Pane id="middlePane" layoutX="27.0" layoutY="170.0" opacity="0.63" prefHeight="809.0" prefWidth="1625.0" style="-fx-background-radius: 40;" styleClass="pane-transparent" />
+      <JFXButton fx:id="btnClear" layoutX="663.0" layoutY="732.0" onAction="#clearOnAction" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane id="middlePane" layoutX="1509.0" layoutY="58.0" opacity="0.63" prefHeight="92.0" prefWidth="142.0" style="-fx-background-radius: 40;" styleClass="pane-transparent">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="78.0" layoutX="32.0" layoutY="10.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-logout-rounded-left-100.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="818.0" layoutY="733.0" onAction="#searchOnAction" prefHeight="74.0" prefWidth="189.0" styleClass="search-btn" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="115.0" layoutY="410.0" style="-fx-text-fill: #996515;" text="Room id                     :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtQty" layoutX="1170.0" layoutY="491.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="851.0" layoutY="495.0" style="-fx-text-fill: #996515;" text="Qty                             :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="494.0" style="-fx-text-fill: #996515;" text="Room type                 :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="846.0" layoutY="411.0" style="-fx-text-fill: #996515;" text="Price                           :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtKeyMoney" layoutX="1171.0" layoutY="410.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomId" layoutX="440.0" layoutY="413.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomType" layoutX="440.0" layoutY="493.0" prefHeight="33.0" prefWidth="352.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

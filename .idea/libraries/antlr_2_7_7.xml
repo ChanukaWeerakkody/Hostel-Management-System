@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.7">
+    <CLASSES>
+      <root url="jar://D:/Java Libraries/required/antlr-2.7.7.jar!/" />
+      <root url="jar://D:/Java Libraries/required/byte-buddy-1.11.20.jar!/" />
+      <root url="jar://D:/Java Libraries/required/classmate-1.5.1.jar!/" />
+      <root url="jar://D:/Java Libraries/required/FastInfoset-1.2.15.jar!/" />
+      <root url="jar://D:/Java Libraries/required/hibernate-commons-annotations-5.1.2.Final.jar!/" />
+      <root url="jar://D:/Java Libraries/required/hibernate-core-5.6.0.Final.jar!/" />
+      <root url="jar://D:/Java Libraries/required/istack-commons-runtime-3.0.7.jar!/" />
+      <root url="jar://D:/Java Libraries/required/jandex-2.2.3.Final.jar!/" />
+      <root url="jar://D:/Java Libraries/required/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://D:/Java Libraries/required/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://D:/Java Libraries/required/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://D:/Java Libraries/required/jaxb-runtime-2.3.1.jar!/" />
+      <root url="jar://D:/Java Libraries/required/jboss-logging-3.4.2.Final.jar!/" />
+      <root url="jar://D:/Java Libraries/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+      <root url="jar://D:/Java Libraries/required/stax-ex-1.8.jar!/" />
+      <root url="jar://D:/Java Libraries/required/txw2-2.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

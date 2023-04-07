@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1005.0" prefWidth="1685.0" styleClass="right-pane" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hostel.controller.ReservationDetailController">
+   <children>
+      <Label layoutX="45.0" layoutY="23.0" style="-fx-text-fill: #996515;" text="Res Details">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Pane id="middlePane" layoutX="34.0" layoutY="177.0" opacity="0.63" prefHeight="809.0" prefWidth="1625.0" style="-fx-background-radius: 40;" styleClass="pane-transparent">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+      <Pane layoutX="860.0" layoutY="39.0" opacity="0.67" prefHeight="112.0" prefWidth="747.0" style="-fx-background-radius: 40;" styleClass="pane-transparent">
+         <children>
+            <Label fx:id="lblTime" layoutX="28.0" layoutY="15.0" prefHeight="90.0" prefWidth="341.0" style="-fx-text-fill: #996515;" text="00 : 00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="435.0" layoutY="4.0" prefHeight="109.0" prefWidth="264.0" style="-fx-text-fill: #996515;" text="2022.07.06" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="97.0" layoutY="778.0" text="Status" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUpdateStatus" layoutX="98.0" layoutY="821.0" prefHeight="31.0" prefWidth="231.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbUpdateSelectStudent" layoutX="95.0" layoutY="517.0" prefHeight="31.0" prefWidth="211.0" unFocusColor="#996515" />
+      <Label layoutX="95.0" layoutY="473.0" text="Student Id" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbUpdateSelectRoom" layoutX="98.0" layoutY="680.0" prefHeight="31.0" prefWidth="211.0" unFocusColor="#996515" />
+      <Label layoutX="98.0" layoutY="636.0" text="Room Id" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="333.0" text="Reserve Id" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtReserveID" layoutX="94.0" layoutY="376.0" prefHeight="31.0" prefWidth="231.0" unFocusColor="#996515">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Line endX="156.0" layoutX="185.0" layoutY="303.0" startX="-91.0" startY="1.52587890625E-5" stroke="#996515" strokeWidth="5.0" />
+      <Label layoutX="93.0" layoutY="248.0" text="U P D A T E " textFill="#996515">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Line endX="-91.0" endY="577.6666870117188" layoutX="565.0" layoutY="328.0" startX="-91.0" startY="1.52587890625E-5" stroke="#996515" strokeWidth="5.0" />
+      <TableView id="effect" fx:id="tblReserve" layoutX="497.0" layoutY="421.0" prefHeight="460.0" prefWidth="1092.0">
+         <columns>
+            <TableColumn fx:id="colResId" prefWidth="143.0" text="Resreve Id" />
+            <TableColumn fx:id="colDate" prefWidth="196.66668701171875" text="Date" />
+            <TableColumn fx:id="colStudentId" prefWidth="218.3333740234375" text="Studdent Id" />
+            <TableColumn fx:id="colRoomId" prefWidth="196.3333740234375" text="RoomId" />
+            <TableColumn fx:id="colStatus" prefWidth="163.333251953125" text="Status" />
+            <TableColumn fx:id="colKeymoney" prefWidth="174.6666259765625" text="Remain KeyMoney" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuEditOnAction" text="Update" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <JFXComboBox fx:id="cmbSearchRoomId" layoutX="979.0" layoutY="275.0" prefHeight="31.0" prefWidth="333.0" unFocusColor="#996515" />
+      <Label layoutX="1345.0" layoutY="226.0" text="Room Type" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbRoomType" layoutX="1347.0" layoutY="274.0" prefHeight="31.0" prefWidth="231.0" unFocusColor="#996515" />
+      <Label layoutX="975.0" layoutY="226.0" text="Room Id" textFill="#996515">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUpdate" layoutX="249.0" layoutY="884.0" onAction="#btnReserveUpdateOnAction" prefHeight="74.0" prefWidth="189.0" styleClass="update-btn" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="73.0" layoutY="882.0" onAction="#RoomClearOnAction" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
